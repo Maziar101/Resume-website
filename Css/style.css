@@ -1,0 +1,350 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Iranyekan";
+}
+@font-face {
+    font-family: "Iranyekan";
+    src: url(../fonts/iranyekanwebregularfanum.eot);
+    src: url(../fonts/iranyekanwebregularfanum.ttf);
+    src: url(../fonts/iranyekanwebregularfanum.woff);
+}
+:root{
+    --blue-color: #297AC2;
+    --white-color: #fff;
+    --gray-color: gray;
+    --shadow-color: #1f2021;
+    --base-bg: #212428;
+    --bg1: #2e3033;
+    --input-bg: #191b1e;
+}
+body{
+    direction: rtl;
+}
+.container{
+    width: 100%;
+    background-color: var(--base-bg);
+}
+.header{
+    background-color: var(--base-bg);
+    display: flex;
+    align-items: center;
+    padding-right: 50px;
+    position: sticky;
+    top: 0;
+    box-shadow: 0px 3px 5px var(--shadow-color);
+}
+.header .logo{
+    padding: 10px;
+}
+.header .logo img{
+    width: 60px;
+    height: 33px;
+}
+.nav{
+    margin-right: 60px;
+}
+.nav li{
+    display: inline-block;
+    padding: 8px;
+}
+.nav a{
+    color: var(--white-color);
+    text-decoration: none;
+    font-size: 12px;
+}
+.navbar{
+    display: flex;
+    margin: auto;
+}
+/*************************************************/
+.main{
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: stretch;
+}
+.my-info-title{
+    font-size: 25px;
+    padding-left: 200px;
+}
+.my-pic{
+    width: 50%;
+    margin-left: -50px;
+    display: flex;
+    justify-content: center;
+}
+.my-pic img{
+    width: 60%;
+    background-color: var(--bg1);
+    border-radius: 10px;
+}
+.my-info{
+    width: 50%;
+}
+.my-info p{
+    color: var(--white-color);
+    width: 300px;
+    font-size: 9px;
+    margin-top: 35px;
+}
+.contact{
+    margin-top: 55px;
+}
+.my-info-title{
+    color: var(--white-color);
+}
+.my-info-title span{
+    color: var(--blue-color);
+}
+#khadamat{
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+div i{
+    background-color: var(--bg1);
+    padding: 6px 7px;
+    border-radius: 4px;
+    color: var(--white-color);
+}
+div a{
+    text-decoration: none;
+}
+.section-title{
+    text-align: center;
+    color: var(--blue-color);
+    margin-bottom: 15px;
+}
+.services{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+    padding: 40px;
+}
+.service i{
+    color: var(--blue-color);
+    font-size: 24px;
+    transition: all 1s;
+}
+.service:hover .main-i{
+    transform: rotate(360deg);
+}
+.service{
+    color: var(--white-color);
+    padding: 30px;
+    background-color: var(--bg1);
+    transition: 1s all;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px var(--shadow-color);
+}
+
+.service:hover{
+    background-color: var(--blue-color);
+}
+.service:hover i{
+    color: var(--white-color);
+    background-color: var(--blue-color);
+}
+.service p{
+    font-size: 12px;
+    margin-top: 10px;
+}
+.skills{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+.skills .skill{
+    color: var(--white-color);
+}
+.skill .progress-bar{
+    width: 100%;
+    height: 15px;
+    border-radius: 50px;
+    box-shadow: inset 5px 5px 10px var(--input-bg);
+}
+
+.progress-bar .inner-progress{
+    width: 90%;
+    height: 15px;
+    border-radius: 50px;
+    background: linear-gradient(145deg, #297AC2 , blue);
+    text-align: center;
+    font-size: 12px;
+}
+.section{
+    padding: 20px 40px;
+}
+#seo{
+    width: 35%;
+}
+#word{
+    width: 85%;
+}
+#back{
+    width: 35%;
+}
+.section p{
+    font-size: 12px;
+}
+.nemones{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.nemones .nemone{
+    margin: 10px;
+    width: 30%;
+    background-color: var(--bg1);
+    border-radius: 20px;
+    padding: 15px;
+}
+.nemone img{
+    border-radius: 20px;
+    width: 100%;
+}
+.nemone .nemone-like{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.nemone .nemone-like .nemone-title{
+    color: var(--blue-color);
+}
+.nemone .nemone-like p{
+    color: var(--gray-color);
+}
+.nemone .nemone-p{
+    color: #fff !important;
+    width: 75%;
+}
+.heart{
+    color: var(--blue-color) !important;
+}
+.contact-section{
+    justify-content: space-between;
+    align-items: stretch;
+    display: flex;
+}
+.contact-section .contact-info{
+    box-shadow: 2px 2px 5px var(--shadow-color);
+    border-radius: 5px;
+    padding: 20px;
+    width: 40%;
+    color: var(--white-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.contact-section .contact-info img{
+    width: 100%;
+    border-radius: 5px;
+}
+.contact-info h3{
+    font-size: 22px;
+    color: var(--blue-color);
+}
+.contact p{
+    color: var(--blue-color);
+}
+.contact-section-me{
+    width: 80%;
+    margin: auto;
+}
+.contact-form {
+    box-shadow: 2px 2px 5px var(--shadow-color);
+    padding: 10px 20px;
+}
+.contact-section .contact-form label{
+    font-size: 12px;
+}
+.contact-section .contact-form input,
+.contact-form textarea{
+    display: block;
+    background-color: var(--input-bg);
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    outline: none;
+    margin-bottom: 5px;
+}
+.footer{
+    text-align: center;
+    border-top: 1px solid var(--shadow-color);
+}
+.footer img{
+    width: 150px;
+    margin: 20px 0;
+}
+@media screen and (max-width: 760px) {
+    .logo{
+        display: none;
+    }
+    .navbar{
+        margin: 0;
+    }
+    .main{
+        flex-direction: column;
+    }
+    .my-pic{
+        width: 100%;
+    }
+    .my-info{
+        width: 100%;
+        padding-right: 100px;
+    }
+    .my-info p{
+        margin-top: 15px;
+        font-size: 13px;
+    }
+    .my-pic img{
+        width: 70%;
+    }
+    .my-info-title{
+        margin-top: 10px;
+    }
+    .contact{
+        margin-top: 20px;
+    }
+    .social-link{
+        margin-top: 5px;
+    }
+    .social-i{
+        padding: 10px 12px;
+    }
+    .services{
+        grid-template-columns: auto;
+    }
+    .nemones .nemone {
+        width: 100%;
+    }
+    .nemone-like{
+        padding: 5px;
+    }
+    .social-end{
+        padding: 5px;
+    }
+    .contact-section{
+        flex-direction: column;
+    }
+    .contact-info img{
+        width: 100%;
+    }
+    .contact-section .contact-info{
+        width: 100%;
+        margin-bottom: 25px;
+    }
+    .contact-info p{
+        font-size: 15px;
+        margin-top: 5px;
+    }
+    .footer img{
+        width: 100px;
+    }
+    .nemone .nemone-p {
+        font-size: 17px;
+    }
+}
